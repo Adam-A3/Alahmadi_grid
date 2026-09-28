@@ -1,0 +1,51 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafbfc;
+  color: #1f2933;
+}
+/*Controls site header layout*/
+.site-header,
+footer {
+  padding: 24px;
+  text-align: center;
+}
+
+.site-header h1 { margin: 0; color: #0b3d91; }
+
+/* THE GRID */
+/*This controls grid layout and the gap between items*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+/* featured photo spans 2 columns */
+/*This makes the feature image bigger*/
+.gallery .feature {
+  grid-column: span 2;
+}
+/*Controls the design of the box the photo is in*/
+.photo {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(11, 61, 145, 0.06);
+}
+/*Controls image size*/
+.photo img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+/*Controls image caption*/
+.photo figcaption {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #3e4c59;
+}
